@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.dell.pokedex.MainActivity"
+    android:background="#000000">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ff2200"
+        android:fitsSystemWindows="true"
+        android:id="@+id/toolbar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:id="@+id/homepage_img"
+        android:src="@drawable/pokedex"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context="com.example.dell.pokedex.MainActivity">
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter the name of the Pokemon here"
+        android:id="@+id/pokemon_name"
+        android:textColorHint="#ff0000"
+        android:textColor="#000000"
+        android:background="#ffff00"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:background="#bbbb00"
+        android:onClick="submit"
+        android:layout_weight="1"
+        android:id="@+id/submit"
+        android:layout_marginTop="15dp"/>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/loading_spinner"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp" />
+
+
+
+
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:textColor="#ffff00"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Active Internet Connection"
+        android:id="@+id/no_internet"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Try Again"
+        app:layout_anchor="@id/no_internet"
+        app:layout_anchorGravity="bottom|center"
+        android:layout_gravity = "bottom|center"
+        android:textColor="#0000ff"
+        android:id="@+id/try_again"
+        android:visibility="gone"
+        android:onClick="restore_original_homepage"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/history"
+        app:elevation="4dp"
+        app:backgroundTint="#ff9900"
+        android:onClick="search_history"/>
+</android.support.design.widget.CoordinatorLayout>

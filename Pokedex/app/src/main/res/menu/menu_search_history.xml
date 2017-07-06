@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item
+            android:title="Clear Search History"
+            android:icon="@mipmap/delete"
+            android:orderInCategory="100"
+            app:showAsAction="ifRoom"
+            android:onClick="delete_all">
+        </item>
+        <item
+            android:title="Help"
+            android:icon="@mipmap/help"
+            android:orderInCategory="200"
+            app:showAsAction="ifRoom"
+            android:onClick="help">
+        </item>
+    </group>
+
+</menu>

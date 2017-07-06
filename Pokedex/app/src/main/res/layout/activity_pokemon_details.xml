@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#000000">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.dell.pokedex.PokemonDetailsActivity"
+    android:background="#000000">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokemon_image"
+        android:src="@drawable/pokedex"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="#ffff00"
+        android:text="NAME"
+        android:textSize="24dp"
+        android:layout_marginBottom="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textStyle="bold|italic"
+            android:textColor="#ffff00"
+            android:padding="3dp"
+            android:text="NAME"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:background="#ffff00"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:text="PRIMARY TYPE"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffff00"
+            android:textStyle="bold|italic"
+            android:padding="3dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/primary_type"
+            android:text="PRIMARY TYPE"
+            android:textSize="16dp"
+            android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:text="SECONDARY TYPE"
+        android:background="#ffff00"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"
+        android:id="@+id/secondary_type2"/>
+
+        <TextView
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:padding="3dp"
+            android:textColor="#ffff00"
+            android:id="@+id/secondary_type1"
+            android:text="SECONDARY TYPE"
+            android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEIGHT(in cm)"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffff00"
+        android:textColor="#000000"/>
+
+        <TextView
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/height"
+            android:text="HEIGHT"
+            android:textColor="#ffff00"
+            android:textSize="16dp"
+            android:padding="3dp"
+            android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEIGHT(in kg)"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:background="#ffff00"
+        android:textColor="#000000" />
+
+        <TextView
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff00"
+            android:id="@+id/weight"
+            android:padding="3dp"
+            android:text="WEIGHT"
+            android:layout_marginBottom="10dp"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
