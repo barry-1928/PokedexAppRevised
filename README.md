@@ -1,6 +1,6 @@
 # PokedexAppRevised
 
-The following are the general information and guidelines regarding the "AlarmOnProximity" app.
+The following are the general information and guidelines regarding the "Pokedex" app.
 
 1. The Pokedex App is an unofficial, free app which lets you search details for any Pokemon you desire, alongwith an image of the Pokemon.
 2. The app first opens with a splash screen for 2 seconds.
@@ -22,4 +22,6 @@ Hope you enjoy the app.
 
 Thank You. 
 
-Developed by Rajat Bhatta. 106116066
+Developed by Rajat Bhatta. 
+
+106116066
